@@ -1,0 +1,43 @@
+{
+  "name": "moving-target",
+  "version": "0.1.5",
+  "description": "Cold-start context for DeepSeek Harness: distills one goal paragraph from the first prompt of every past session in a workspace and auto-injects it into each new session start.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./extract": "./lib/extract.js"
+  },
+  "files": [
+    "lib",
+    "README.md"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "context",
+    "session-summary"
+  ],
+  "license": "MIT",
+  "bin": {
+    "moving-target-extract": "./lib/cli.js"
+  },
+  "scripts": {
+    "test": "node --experimental-strip-types --test \"src/*.test.ts\"",
+    "build": "tsc -p tsconfig.build.json",
+    "prepack": "npm run build && npm test"
+  },
+  "engines": {
+    "node": ">=22.6"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-commands": "^0.1.1-rc.2",
+    "@deepseek-ai/dsh-llm": "^0.1.1-rc.2",
+    "@deepseek-ai/dsh-tools": "^0.1.1-rc.2"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "typescript": "^7.0.2"
+  }
+}

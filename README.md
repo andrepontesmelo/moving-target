@@ -1,5 +1,9 @@
 # moving-target
 
+[![CI](https://github.com/andrepontesmelo/moving-target/actions/workflows/ci.yml/badge.svg)](https://github.com/andrepontesmelo/moving-target/actions/workflows/ci.yml)
+[![Version](https://img.shields.io/github/package-json/v/andrepontesmelo/moving-target/main?label=version)](package.json)
+![local gate](https://img.shields.io/badge/local%20gate-21%20tests%20%2B%20build-brightgreen)
+
 A [DeepSeek Harness](https://www.npmjs.com/package/@deepseek-ai/dsh) (DSH) plugin that
 gives every new agent session a **one-paragraph project goal** — distilled from your own
 session history, frozen until you choose to update it.

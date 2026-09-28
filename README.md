@@ -1,8 +1,10 @@
 # moving-target
 
-[![CI](https://github.com/andrepontesmelo/moving-target/actions/workflows/ci.yml/badge.svg)](https://github.com/andrepontesmelo/moving-target/actions/workflows/ci.yml)
-[![Version](https://img.shields.io/github/package-json/v/andrepontesmelo/moving-target/main?label=version)](package.json)
-![local gate](https://img.shields.io/badge/local%20gate-21%20tests%20%2B%20build-brightgreen)
+> **Deprecated — 2026-09-11.** moving-target is superseded by
+> [deep-horizon](https://github.com/andrepontesmelo/deep-horizon), which keeps a
+> project's aim — one about line, up to 5 gaps — in front of every agent session via
+> per-harness adapters over one shared `.horizon` store. Use deep-horizon for new
+> projects.
 
 A [DeepSeek Harness](https://www.npmjs.com/package/@deepseek-ai/dsh) (DSH) plugin that
 gives every new agent session a **one-paragraph project goal** — distilled from your own
@@ -47,7 +49,7 @@ Plugins install per-profile. From this repo:
 
 ```bash
 npm pack
-dsh plugin --profile <your-profile> add file:/path/to/moving-target-0.1.0.tgz
+dsh plugin --profile <your-profile> add file:/path/to/moving-target-0.1.5.tgz
 ```
 
 Mount it by adding an insert row to the profile's `cordis.patch.yml`:
